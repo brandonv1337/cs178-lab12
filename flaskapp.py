@@ -24,6 +24,36 @@ def hello(name):
     return render_template('hello.html', name=name)
 
 
+@app.route('/analyze/<word>')
+def analyze(word):
+    return str(len(word))
+
+
+@app.route('/analyze/<word>')
+def analyze(word):
+    num_chars = len(word)
+    num_vowels = sum(1 for char in word.lower() if char in 'aeiou')
+    return render_template('analyze.html',
+                           word=word,
+                           num_chars=num_chars,
+                           num_vowels=num_vowels)
+
+
+@app.route('/analyze/<word>')
+def analyze(word):
+    num_chars = len(word)
+    num_vowels = sum(1 for char in word.lower() if char in 'aeiou')
+    reversed_word = word[::-1]
+    return render_template('analyze.html',
+                           word=word,
+                           num_chars=num_chars,
+                           num_vowels=num_vowels,
+                           reversed_word=reversed_word)
+
+
+    pass
+
+
 # ============================================================
 #  YOUR ROUTES GO BELOW THIS LINE
 #  Each exercise asks you to add a new @app.route here
