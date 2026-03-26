@@ -23,11 +23,13 @@ def home():
 def hello(name):
     return render_template('hello.html', name=name)
 
-
+'''
 @app.route('/analyze/<word>')
 def analyze(word):
     return str(len(word))
 '''
+
+
 
 @app.route('/analyze/<word>')
 def analyze(word):
@@ -38,7 +40,7 @@ def analyze(word):
                            num_chars=num_chars,
                            num_vowels=num_vowels)
 
-
+'''
 @app.route('/analyze/<word>')
 def analyze(word):
     num_chars = len(word)
