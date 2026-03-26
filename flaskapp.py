@@ -30,7 +30,7 @@ def analyze(word):
 '''
 
 
-
+'''
 @app.route('/analyze/<word>')
 def analyze(word):
     num_chars = len(word)
@@ -55,7 +55,7 @@ def analyze(word):
 
     pass
 
-'''
+
 # ============================================================
 #  YOUR ROUTES GO BELOW THIS LINE
 #  Each exercise asks you to add a new @app.route here
