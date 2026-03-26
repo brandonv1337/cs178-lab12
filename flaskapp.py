@@ -27,7 +27,7 @@ def hello(name):
 @app.route('/analyze/<word>')
 def analyze(word):
     return str(len(word))
-
+'''
 
 @app.route('/analyze/<word>')
 def analyze(word):
@@ -53,7 +53,7 @@ def analyze(word):
 
     pass
 
-
+'''
 # ============================================================
 #  YOUR ROUTES GO BELOW THIS LINE
 #  Each exercise asks you to add a new @app.route here
